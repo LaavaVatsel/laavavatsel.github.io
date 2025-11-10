@@ -8,6 +8,42 @@
   <link rel="stylesheet" href="fontawesome/css/all.min.css" />
   <link rel="stylesheet" href="css/templatemo-style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #8B5E3C;
+      --secondary-color: #A89F91;
+      --accent-color: #5C6E58;
+      --text-color: #3E3E3E;
+      --bg-color: #F5F1E9;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Lora', serif;
+    }
+    .tm-text-primary {
+      color: var(--primary-color);
+    }
+    .tm-bg-gray {
+      background-color: #EAE3D2;
+    }
+    .navbar, .tm-footer {
+      background-color: var(--accent-color);
+      color: #fff;
+    }
+    .navbar .nav-link {
+      color: #fff;
+    }
+    .navbar .nav-link:hover {
+      color: var(--secondary-color);
+    }
+    a {
+      color: var(--primary-color);
+    }
+    a:hover {
+      color: var(--accent-color);
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg">
@@ -29,7 +65,14 @@
     </div>
   </nav>
 
-  <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg"></div>
+  <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg">
+    <form class="d-flex tm-search-form">
+      <input class="form-control tm-search-input" type="search" placeholder="Search" />
+      <button class="btn btn-outline-success tm-search-btn" type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
 
   <div class="container-fluid tm-mt-60">
     <div class="row tm-mb-50">
@@ -66,4 +109,25 @@
         <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
           <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
             <li class="mb-2">
-              <a href="https://www.instagram.com/laavamv/"
+              <a href="https://www.instagram.com/laavamv/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="tm-text-gray text-right d-block mb-2">Terms of Use</a>
+          <a href="#" class="tm-text-gray text-right d-block">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      document.body.classList.add("loaded");
+    });
+  </script>
+</body>
+</html>

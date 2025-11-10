@@ -13,7 +13,7 @@
       --primary-color: #8B5E3C;
       --secondary-color: #A89F91;
       --accent-color: #5C6E58;
-      --text-color: #3E3E3E;
+      --text-color: #3f5720;
       --bg-color: #F5F1E9;
     }
     body {
@@ -29,7 +29,15 @@
     }
     .navbar, .tm-footer {
       background-color: var(--accent-color);
+      color: #ffffff;
+    }
+    .navbar .nav-link {
       color: #fff;
+      transition: color 0.3s ease;
+    }
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: var(--secondary-color);
     }
     a {
       color: var(--primary-color);
@@ -40,6 +48,9 @@
   </style>
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -73,15 +84,24 @@
       <h2 class="col-12 tm-text-primary">My Zagreb</h2>
     </div>
     <div class="row tm-gallery">
-      <!-- Gallery using actual filenames -->
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/xmdYtgc89z9i85wimPP66.jpeg" alt="Street View" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>My Street</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/r4RsPUrCwJZQiAGaRh8sj.jpeg" alt="Tram Stop" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Frankopanska</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/nrfQm4xNwribo7FX8APVL.jpeg" alt="Blue Trams" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Blue Trams</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/8zJ2AkH5EeJtuyDeqkRtb.jpeg" alt="Walkway" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Corridor</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/4eBfcjqsN1w4P9n7ZoFG1.jpeg" alt="Smokestack" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Industrial Sky</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/RhQtErS9AYWMoXNYpf5KF.jpeg" alt="Brick Apartments" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Residential Block</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/KgNkE9FTz7LP3eaqjtGCN.jpeg" alt="Clock" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Zagorska Clock</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/CBE52D8cqisqMzhi174tP.jpeg" alt="Construction" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Growing City</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/vNPJnCzLFJPqeEm7TziXn.jpeg" alt="Green Gate" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Morbi Gate</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/KfZfsegJSn8eKxTrJZBi2.jpeg" alt="Spiral Lights" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>DNA Lights</h2><a href="photo-detail.html">View more</a></figcaption></figure></div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/7nKWFsULJSpT2Tn4kED8r.jpeg" alt="Window Vines" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2
+      <!-- Your gallery thumbnails go here -->
+      <!-- Already working correctly -->
+    </div>
+  </div>
+</body>
+</html>
+
+    <div class="row tm-gallery">
+      <!-- Updated links with ?id=LAWxxxxx -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00396.JPG" alt="Look up" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Look up</h2><a href="photo-detail.html?id=LAW00396">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00399.JPG" alt="Frankopanska" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Frankopanska</h2><a href="photo-detail.html?id=LAW00399">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00422.JPG" alt="Draškovičeva" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Draškovičeva</h2><a href="photo-detail.html?id=LAW00422">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00443.JPG" alt="Šenoa" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Šenoa</h2><a href="photo-detail.html?id=LAW00443">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00786.JPG" alt="Green Gate" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Green Gate</h2><a href="photo-detail.html?id=LAW00786">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00921.JPG" alt="Tunnel" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Tunnel</h2><a href="photo-detail.html?id=LAW00921">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00942.JPG" alt="Parking" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Parking</h2><a href="photo-detail.html?id=LAW00942">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00935.JPG" alt="Tree" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Tree</h2><a href="photo-detail.html?id=LAW00935">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00652.JPG" alt="Industrial Sky" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Industrial Sky</h2><a href="photo-detail.html?id=LAW00652">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00724.JPG" alt="Street Clock" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Street Clock</h2><a href="photo-detail.html?id=LAW00724">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00729.JPG" alt="Construction" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Construction</h2><a href="photo-detail.html?id=LAW00729">View more</a></figcaption></figure></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5"><figure class="effect-ming tm-video-item"><img src="img/LAW00931.JPG" alt="Window" class="img-fluid" /><figcaption class="d-flex align-items-center justify-content-center"><h2>Window</h2><a href="photo-detail
