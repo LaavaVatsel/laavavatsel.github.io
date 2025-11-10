@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Detail – Laava's Zagreb</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="css/templatemo-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #8B5E3C;
+      --accent-color: #5C6E58;
+      --bg-color: #F5F1E9;
+      --text-color: #3E3E3E;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Lora', serif;
+    }
+    .tm-text-primary {
+      color: var(--primary-color);
+    }
+    .tm-bg-gray {
+      background-color: #EAE3D2;
+    }
+    .navbar, .tm-footer {
+      background-color: var(--accent-color);
+      color: #fff;
+    }
+    a {
+      color: var(--primary-color);
+    }
+    a:hover {
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-camera mr-2"></i>
+        Laava's Zagreb
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg"></div>
+
+  <div class="container-fluid tm-container-content tm-mt-60">
+    <div class="row mb-4">
+      <h2 class="col-12 tm-text-primary">Tram Lines</h2>
+    </div>
+    <div class="row tm-mb-90">
+      <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
+        <img src="img/zagreb-02.jpg" alt="Tram Lines in Zagreb" class="img-fluid" />
+      </div>
+      <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+        <div class="tm-bg-gray tm-video-details">
+          <p class="mb-4">
+            A quiet moment in motion — the tram lines overhead, the wires that connect the city’s rhythm.
+          </p>
+          <div class="mb-4 d-flex flex-wrap">
+            <div class="mr-4 mb-2">
+              <span class="tm-text-gray-dark">Dimension: </span><span class="tm-text-primary">1920x1080</span>
+            </div>
+            <div class="mr-4 mb-2">
+              <span class="tm-text-gray-dark">Format: </span><span class="tm-text-primary">JPG</span>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h3 class="tm-text-gray-dark mb-3">License</h3>
+            <p>Free for personal and portfolio use. Please credit if shared publicly.</p>
+          </div>
+          <div>
+            <h3 class="tm-text-gray-dark mb-3">Tags</h3>
+            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Zagreb</a>
+            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Tram</a>
+            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Urban</a>
+            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Wires</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+    <div class="container-fluid tm-container-small">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+          <h3 class="tm-text-primary mb-4 tm-footer-title">About This Site</h3>
+          <p>This is my personal lens on Zagreb — not the city of guidebooks, but the one I know from years of walking its streets.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+          <h3 class="tm-text-primary mb-4 tm-footer-title">Links</h3>
+          <ul class="tm-footer-links pl-0">
+            <li><a href="index.html">Photos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+          <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+            <li class="mb-2">
+              <a href="https://www.instagram.com/laavamv/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="tm-text-gray text-right d-block mb-2">Terms of Use</a>
+          <a href="#" class="tm-text-gray text-right d-block">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/plugins.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      document.body.classList.add("loaded");
+    });
+  </script>
+</body>
+</html>
